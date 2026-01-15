@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentació | Carpeta d'Aprenentatge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="layout">
+        <!-- Botó menú mòbil -->
+        <button class="menu-toggle" id="menuToggle">☰</button>
+
+        <!-- Overlay mòbil -->
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <a href="index.html" class="sidebar-logo">carpeta_aprenentatge</a>
+            </div>
+            <nav class="sidebar-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">
+                            <span class="nav-icon">01</span>
+                            Presentació
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="repte.html" class="nav-link">
+                            <span class="nav-icon">02</span>
+                            Repte i ODS
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projecte.html" class="nav-link">
+                            <span class="nav-icon">03</span>
+                            Pas a Pas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="diari.html" class="nav-link">
+                            <span class="nav-icon">04</span>
+                            Diari
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="rubriques.html" class="nav-link">
+                            <span class="nav-icon">05</span>
+                            Rúbriques
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="aportacio.html" class="nav-link">
+                            <span class="nav-icon">06</span>
+                            Aportació
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="fira.html" class="nav-link">
+                            <span class="nav-icon">07</span>
+                            Fira
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="reflexio.html" class="nav-link">
+                            <span class="nav-icon">08</span>
+                            Reflexió
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Contingut Principal -->
+        <main class="main-content">
+            <h1>Presentació</h1>
+
+            <!-- Secció: Qui soc -->
+            <section class="section">
+                <div class="section-header">
+                    <span class="section-number">01</span>
+                    <h2>Qui soc</h2>
+                </div>
+                <div class="card">
+                    <p class="placeholder">[Escriu aquí la teva presentació personal: nom, interessos, motivacions...]
+                    </p>
+                </div>
+            </section>
+
+            <!-- Secció: El meu grup -->
+            <section class="section">
+                <div class="section-header">
+                    <span class="section-number">02</span>
+                    <h2>El meu grup</h2>
+                </div>
+                <div class="card">
+                    <p class="placeholder">[Presenta el teu grup de treball: membres, rols, com us heu organitzat...]
+                    </p>
+                </div>
+            </section>
+
+            <!-- Secció: Expectatives -->
+            <section class="section">
+                <div class="section-header">
+                    <span class="section-number">03</span>
+                    <h2>Expectatives</h2>
+                </div>
+                <div class="card">
+                    <p class="placeholder">[Quines són les teves expectatives per a aquest projecte? Què esperes
+                        aprendre?]</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Toggle sidebar en mòbil
+        const menuToggle = document.getElementById('menuToggle');
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('sidebarOverlay');
+
+        menuToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('open');
+            overlay.classList.toggle('visible');
+        });
+
+        overlay.addEventListener('click', () => {
+            sidebar.classList.remove('open');
+            overlay.classList.remove('visible');
+        });
+    </script>
+</body>
+
+</html>

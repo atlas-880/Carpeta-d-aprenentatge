@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repte i ODS | Carpeta d'Aprenentatge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="layout">
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <a href="index.html" class="sidebar-logo">carpeta_aprenentatge</a>
+            </div>
+            <nav class="sidebar-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            <span class="nav-icon">01</span>
+                            Presentació
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="repte.html" class="nav-link active">
+                            <span class="nav-icon">02</span>
+                            Repte i ODS
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projecte.html" class="nav-link">
+                            <span class="nav-icon">03</span>
+                            Pas a Pas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="diari.html" class="nav-link">
+                            <span class="nav-icon">04</span>
+                            Diari
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="rubriques.html" class="nav-link">
+                            <span class="nav-icon">05</span>
+                            Rúbriques
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="aportacio.html" class="nav-link">
+                            <span class="nav-icon">06</span>
+                            Aportació
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="fira.html" class="nav-link">
+                            <span class="nav-icon">07</span>
+                            Fira
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="reflexio.html" class="nav-link">
+                            <span class="nav-icon">08</span>
+                            Reflexió
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <h1>Repte i ODS</h1>
+
+            <!-- Secció: El Problema -->
+            <section class="section">
+                <div class="section-header">
+                    <span class="section-number">01</span>
+                    <h2>El meu problema a resoldre</h2>
+                </div>
+                <div class="card">
+                    <p class="placeholder">El problema a resoldre que he trobat està relacionat amb la productivitat.
+                        Quan sona l'alarma al matí molta gent en la qual m'incloc, posposa sempre l'alarma fins al punt
+                        que no s'acaben aixecant del llit fins passats 10 o 15 minuts.
+                        La solució que he pensat és una app d'una alarma que només es para si escaneges un codi de
+                        barres que tinguis en alguna part de la casa en concret, cosa que fa que t'hagis d'aixecar sí o
+                        sí del llit per poder parar-la.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Secció: ODS Relacionats -->
+            <section class="section">
+                <div class="section-header">
+                    <span class="section-number">02</span>
+                    <h2>Objectius de Desenvolupament Sostenible</h2>
+                </div>
+                <div class="foto-ods">
+                    <img class="foto-ods" src="fonts/ods.list.png" alt="ODS 1">
+                </div>
+            </section>
+
+            <!-- Secció: Justificació ODS -->
+            <section class="section">
+                <div class="section-header">
+                    <span class="section-number">03</span>
+                    <h2>Justificació dels ODS</h2>
+                </div>
+                <div class="card">
+                    <p class="placeholder">[Explica per què has seleccionat aquests ODS i com es relacionen amb el teu
+                        projecte]</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('sidebarOverlay');
+
+        menuToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('open');
+            overlay.classList.toggle('visible');
+        });
+
+        overlay.addEventListener('click', () => {
+            sidebar.classList.remove('open');
+            overlay.classList.remove('visible');
+        });
+    </script>
+</body>
+
+</html>
